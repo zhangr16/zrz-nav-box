@@ -1,7 +1,7 @@
 <template>
   <div class="form-wrap">
     <div class="body">
-      <nav-box height="360px" :foldable="true">
+      <nav-box height="400px" :foldable="true">
         <nav-box-pane>
           <div slot="title">Form-1 <strong style="color:#f90">(Html surport)</strong></div>
           <example-form />

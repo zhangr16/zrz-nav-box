@@ -1,6 +1,6 @@
 {
-  "name": "@zhangr16/vue-nav-box",
-  "version": "1.2.1",
+  "name": "zrz-nav-box",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -13,14 +13,14 @@
     "release": "node scripts/release.js",
     "release:gh-pages": "git subtree push --prefix=demo origin gh-pages"
   },
-  "author": "zhangr16",
-  "license": "",
+  "author": "zhangrunze",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangr16/vue-nav-box.git"
+    "url": "https://github.com/zhangr16/zrz-nav-box.git"
   },
   "bugs": {
-    "url": "https://github.com/zhangr16/vue-nav-box/issues"
+    "url": "https://github.com/zhangr16/zrz-nav-box.issues"
   },
   "dependencies": {
     "bezier-easing": "^2.1.0",
