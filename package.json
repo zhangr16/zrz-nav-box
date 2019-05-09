@@ -1,0 +1,41 @@
+{
+  "name": "@zhangr16/vue-nav-box",
+  "version": "1.2.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/vue-nav-box.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build:example": "vue-cli-service build --dest demo",
+    "build:lib": "vue-cli-service build --target lib --name vue-nav-box src/index.js",
+    "lint": "vue-cli-service lint",
+    "release": "node scripts/release.js",
+    "release:gh-pages": "git subtree push --prefix=demo origin gh-pages"
+  },
+  "author": "zhangr16",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangr16/vue-nav-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhangr16/vue-nav-box/issues"
+  },
+  "dependencies": {
+    "bezier-easing": "^2.1.0",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-standard": "^3.0.5",
+    "execa": "^1.0.0",
+    "inquirer": "^6.2.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "semver": "^5.6.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

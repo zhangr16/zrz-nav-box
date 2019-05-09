@@ -1,0 +1,180 @@
+@color-primary: #009efb;
+
+.scrollbar() {
+  &:hover::-webkit-scrollbar {
+    opacity: 1;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 100px;
+    opacity: 0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.09);
+    }
+
+    &-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      -webkit-border-radius: 100px;
+
+      &:active {
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}
+
+.nav-box {
+  &__wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    box-sizing: content-box;
+    flex: 1;
+    padding-right: 16px;
+    overflow: auto;
+    .scrollbar();
+  }
+
+  &__navs {
+    box-sizing: content-box;
+    width: 200px;
+    padding-left: 16px;
+    overflow: auto;
+    .scrollbar();
+
+    ul {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      border-left: 1px solid #eaeaea;
+    }
+  }
+
+  &__nav {
+    position: relative;
+    box-sizing: content-box;
+    padding: 6px 0 6px 16px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 1.4em;
+    min-height: 1.4em;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.4s;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      box-sizing: content-box;
+      display: block;
+      width: 6px;
+      height: 6px;
+      content: '';
+      background-color: #eee;
+      border: 4px solid;
+      border-color: transparent;
+      border-radius: 50%;
+      transition: background-color 0.4s;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      color: @color-primary;
+
+      &::before {
+        background-color: #ddd;
+      }
+    }
+
+    &--active {
+      color: @color-primary;
+
+      &::before {
+        background-color: #fff !important;
+        border-color: @color-primary;
+      }
+    }
+  }
+
+  &__pane:not(:last-child) {
+    // 此处如果使用 margin 会导致在滚动到各子 pane 的交界处时，
+    // 有一瞬间获取定位错误从而导致导航栏的高亮视觉上产生跳动
+    padding-bottom: 16px;
+  }
+
+  &__header {
+    position: relative;
+    padding: 0.5em 1em;
+    box-sizing: content-box;
+    margin-bottom: 16px;
+    line-height: 1.8em;
+    min-height: 1.8em;
+    background-color: #fafafa;
+    border-left: 3px solid @color-primary;
+    box-shadow: inset 0 -1px 0 0 #eaeaea;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 16px;
+    cursor: default;
+  }
+
+  &__folder {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translate(0, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+
+    &:hover {
+      border-color: #bbb;
+      cursor: pointer;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      height: 2px;
+      width: 10px;
+      background-color: #ddd;
+    }
+
+    &::after {
+      display: none;
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+  }
+
+  &__pane--fold {
+    .nav-box__header {
+      margin-bottom: 0;
+    }
+    .nav-box__body {
+      display: none;
+    }
+    .nav-box__folder {
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
