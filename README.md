@@ -1,5 +1,3 @@
-# vue-nav-box
-
 ## Demo
 
 https://zhangr16.github.io/zrz-nav-box/
