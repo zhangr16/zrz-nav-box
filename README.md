@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://laomao800.github.io/vue-nav-box/
+https://zhangr16.github.io/zrz-nav-box/
 
 ### Preview
 
