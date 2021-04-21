@@ -1,9 +1,11 @@
 <template>
   <div class="form-wrap">
     <div class="body">
-      <nav-box height="400px" :foldable="true">
+      <nav-box height="500px" :foldable="true">
         <nav-box-pane>
-          <div slot="title">Form-1 <strong style="color:#f90">(Html surport)</strong></div>
+          <div slot="title">
+            Form-1 <strong style="color:#f90">(Html surport)</strong>
+          </div>
           <example-form />
         </nav-box-pane>
         <nav-box-pane title="Form-2 (Fold by default)" :fold="true">

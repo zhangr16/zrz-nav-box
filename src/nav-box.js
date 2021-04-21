@@ -1,6 +1,3 @@
-/*
- * Scroll feature fork from https://github.com/eddiemf/vue-scrollactive
- */
 import bezierEasing from 'bezier-easing'
 
 function parseSizeUnit(unit) {

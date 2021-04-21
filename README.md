@@ -25,7 +25,7 @@ https://zhangr16.github.io/zrz-nav-box/
 </template>
 
 <script>
-import { NavBox, NavBoxPane } from '@laomao800/vue-nav-box'
+import { NavBox, NavBoxPane } from '@zrz-nav-box'
 
 export default {
   components: {

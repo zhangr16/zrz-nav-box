@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="form-item">
-      <label class="form-item__label">活动名称</label>
+      <label class="form-item__label">活动名称1.2</label>
       <div class="form-item__content">
         <div class="input">
-          <input type="text" class="input__inner">
+          <input type="text" class="input__inner" />
         </div>
       </div>
     </div>
@@ -13,7 +13,7 @@
       <div class="form-item__content">
         <div class="select">
           <div class="input">
-            <input type="text" class="input__inner">
+            <input type="text" class="input__inner" />
           </div>
         </div>
       </div>
@@ -23,12 +23,22 @@
       <div class="form-item__content">
         <div style="width:40%;display:inline-block;padding-right:10px;">
           <div class="input" style="width: 100%;">
-            <input type="text" name="" placeholder="选择日期" class="input__inner">
+            <input
+              type="text"
+              name=""
+              placeholder="选择日期"
+              class="input__inner"
+            />
           </div>
         </div>
         <div style="width:40%;display:inline-block;">
           <div class="input" style="width: 100%;">
-            <input type="text" name="" placeholder="选择日期" class="input__inner">
+            <input
+              type="text"
+              name=""
+              placeholder="选择日期"
+              class="input__inner"
+            />
           </div>
         </div>
       </div>
@@ -38,15 +48,15 @@
       <div class="form-item__content">
         <div aria-label="checkbox-group" class="checkbox-group">
           <label class="checkbox">
-            <input type="checkbox" name="type" value="美食/餐厅线上活动">
+            <input type="checkbox" name="type" value="美食/餐厅线上活动" />
             <span class="checkbox__label">网吧</span>
           </label>
           <label class="checkbox">
-            <input type="checkbox" name="type" value="地推活动">
+            <input type="checkbox" name="type" value="地推活动" />
             <span class="checkbox__label">桌游</span>
           </label>
           <label class="checkbox">
-            <input type="checkbox" name="type" value="地推活动">
+            <input type="checkbox" name="type" value="地推活动" />
             <span class="checkbox__label">探险</span>
           </label>
         </div>
@@ -57,11 +67,11 @@
       <div class="form-item__content">
         <div class="radio-group">
           <label class="radio">
-            <input type="radio" value="线上品牌商赞助">
+            <input type="radio" value="线上品牌商赞助" />
             <span class="radio__label">线上品牌商赞助</span>
           </label>
           <label class="radio">
-            <input type="radio" value="线下场地免费">
+            <input type="radio" value="线下场地免费" />
             <span class="radio__label">线下场地免费</span>
           </label>
         </div>
@@ -71,7 +81,10 @@
       <label class="form-item__label">活动形式</label>
       <div class="form-item__content">
         <div class="textarea">
-          <textarea class="textarea__inner" style="min-height: 50px;"></textarea>
+          <textarea
+            class="textarea__inner"
+            style="min-height: 50px;"
+          ></textarea>
         </div>
       </div>
     </div>

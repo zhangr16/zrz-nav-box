@@ -1,6 +1,6 @@
 {
   "name": "zrz-nav-box",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "publishConfig": {
     "access": "public"
   },
@@ -9,9 +9,7 @@
     "serve": "vue-cli-service serve",
     "build:example": "vue-cli-service build --dest demo",
     "build:lib": "vue-cli-service build --target lib --name vue-nav-box src/index.js",
-    "lint": "vue-cli-service lint",
-    "release": "node scripts/release.js",
-    "release:gh-pages": "git subtree push --prefix=demo origin gh-pages"
+    "release": "node scripts/release.js"
   },
   "author": "zhangrunze",
   "license": "MIT",

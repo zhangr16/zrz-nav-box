@@ -16,7 +16,7 @@ module.exports = {
   configureWebpack: config => {
     const webpack = require('webpack')
     const version = process.env.VERSION || require('./package.json').version
-    const banner = `@laomao800/vue-nav-box v${version}`
+    const banner = `zrz-nav-box v${version}`
     config.plugins.push(new webpack.BannerPlugin(banner))
   }
 }
